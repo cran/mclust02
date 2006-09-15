@@ -3,11 +3,6 @@
 ## Original program by Chris Fraley and Adrian Raftery
 ## Port by Ron Wehrens
 ##
-.First.lib <- function(lib, pkg) {
-  library.dynam("mclust02", pkg, lib)
-}
-
-
 "[.mclustDAtest" <- function(x, i, j, drop = FALSE)
 {
   clx <- oldClass(x)
