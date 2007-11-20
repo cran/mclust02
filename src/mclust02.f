@@ -4210,6 +4210,7 @@ c------------------------------------------------------------------------------
       if (maxi .le. 0) return
 
 c     FLMAX  = d1mach(2)
+      err    = FLMAX
 
       p1 = p + 1
 
@@ -4262,7 +4263,7 @@ c         w(1)  = smin
 c         w(2)  = zero
           tol   = err
           eps   = FLMAX
-          maxi  = iter
+          maxi  = 0
           return
         end if
 
@@ -4275,7 +4276,7 @@ c         w(2)  = zero
         if (Vinv .le. zero) then
           scale = temp/dble(n)
         else
-          scale = temp/sumz
+          scale = temp/sum
         end if
 
         if (temp .le. eps) then
@@ -4284,7 +4285,7 @@ c         w(1)  = temp
 c         w(2)  = zero
           tol   = err
           eps   = FLMAX
-          maxi  = iter
+          maxi  = 0
           return
         end if
 

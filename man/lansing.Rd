@@ -1,6 +1,5 @@
 \name{lansing}
 \alias{lansing}
-\non_function{}
 \title{Maple trees in Lansing Woods}
 \usage{data(lansing)}
 \description{

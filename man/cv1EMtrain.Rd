@@ -32,7 +32,7 @@ compareClass(map(cv1Zodd), lansing[odd,3])
 
 even <- (1:nrow(lansing))[-odd]
 cv1Zeven <- do.call("estepEEV", c(cv1Modd, list(data=lansing[even,-3])))$z
-compareClass(map(cv1Zodd), lansing[odd,3])$error
+compareClass(map(cv1Zodd), lansing[odd,3])
 }
 \keyword{cluster}
 
