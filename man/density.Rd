@@ -8,10 +8,8 @@ density(\dots, method, G)
 \arguments{
   \item{\dots}{Arguments to the \code{density} function in the base
     package.}
-
   \item{method}{If equal to "mclust", \code{EMclust} is used to estimate
     the density.}
-
   \item{G}{The number of gaussians to consider in the model-based
     density estimation. Default: 1:9. Ignored if method is not equal to
     "mclust".}
@@ -20,7 +18,7 @@ density(\dots, method, G)
   This is exactly the same function as in the \code{stats} package but for the
   \code{method} argument: if it is given and equals \code{"mclust"}, the
   \code{mclust} density estimation is used. Optionally, the number of
-  gaussians to be considered can be given as well (\code{G}).}
+  gaussians to be considered can be given as well (\code{G}).
 }
 \value{
   If \code{give.Rkern} is true, the number \eqn{R(K)}, otherwise

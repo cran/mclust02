@@ -9,7 +9,7 @@
   for \code{EMclust} results.
 }
 \usage{
-summary.EMclust(object, data, G, modelNames, \dots)
+\method{summary}{EMclust}(object, data, G, modelNames, \dots)
 }
 \arguments{
   \item{object}{

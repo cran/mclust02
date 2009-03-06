@@ -8,7 +8,7 @@
   and the corresponding classfications.
 }
 \usage{
-summary.mclustDAtrain(object, \dots)
+\method{summary}{mclustDAtrain}(object, \dots)
 }
 \arguments{
   \item{object}{

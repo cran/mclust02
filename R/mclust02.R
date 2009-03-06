@@ -864,10 +864,6 @@
       sig <- Sigma
       cholIND <- "N"
     }
-    else if(!missing(sigma)) {
-      sig <- sigma
-      cholIND <- "N"
-    }
     else stop("invalid specification for sigma")
   }
   else {
@@ -3630,7 +3626,7 @@
   cholsigma <- list(...)$cholsigma
   if(is.null(cholsigma)) {
     if(missing(sigma)) {
-      decomp$list(...)$decomp
+      decomp <- list(...)$decomp
       if(is.null(decomp))
         stop("covariance improperly specified")
       scale <- decomp$scale
@@ -3872,10 +3868,6 @@
     }
     else if(!is.null(Sigma <- list(...)$Sigma)) {
       sig <- Sigma
-      cholIND <- "N"
-    }
-    else if(!missing(sigma)) {
-      sig <- sigma
       cholIND <- "N"
     }
     else stop("invalid specification for sigma")
@@ -9909,9 +9901,6 @@
     else if(!is.null(Sigma <- list(...)$Sigma)) {
       cholSigma <- chol(Sigma)
     }
-    else if(!missing(sigma)) {
-      cholSigma <- chol(Sigma)
-    }
     else stop("invalid specification for sigma")
   }
   if(all(is.na(c(mu, cholSigma)))) {
@@ -10337,7 +10326,7 @@
       scale <- decomp$scale
       shape <- decomp$shape
       O <- decomp$orientation
-      cholsigma <- array(0, c(p, p, G))
+      cholsigma <- array(0, c(d, d, G))
       shape <- sqrt(sweep(shape, MARGIN = 2, STATS = scale,
                           FUN = "*"))
       for(k in 1:G)
@@ -10357,7 +10346,7 @@
   if(missing(pro))
     pro <- rep(1/G, G)
   set.seed(seed)
-  clabels <- sample(1:G, size = n, replace = T, prob = pro)
+  clabels <- sample(1:G, size = n, replace = TRUE, prob = pro)
   ctabel <- table(clabels)
   x <- matrix(0, n, d)
   for(k in 1:G) {
@@ -11564,7 +11553,7 @@
         i <- k - j
         m <- mask[i]
         counter[m] <- (counter[m] %% len[m]) + 1
-        y[x == name(map)[m]] <- map[[m]][counter[m]]
+        y[x == names(map)[m]] <- map[[m]][counter[m]]
         temp <- y != x
         err <- sum(as.numeric(temp))
         if(err < errmin) {

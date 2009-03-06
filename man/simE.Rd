@@ -53,6 +53,7 @@ simVVV(mu, pro, \dots, seed = 0)
     Component mixing proportions. If missing, equal proportions are assumed.
   }
   \item{\dots}{
+    \itemize{
     \item Other terms describing variance:
     \describe{
       \item{Sigma}{ 
@@ -73,6 +74,7 @@ simVVV(mu, pro, \dots, seed = 0)
     \item{n}{
       An integer specifying the number of data points to be simulated.
     }
+   }
   }
   \item{seed}{
     A integer between 0 and 1000, inclusive, for specifying a seed for 

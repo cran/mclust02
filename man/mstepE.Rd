@@ -85,7 +85,6 @@ mstepVVV(data, z, equalPro, noise = FALSE, \dots)
 }
 \value{
   A list including the following components: 
-  
   \item{mu}{
     A matrix whose kth column is the
     mean of the \emph{k}th component of the mixture model.
@@ -111,10 +110,12 @@ mstepVVV(data, z, equalPro, noise = FALSE, \dots)
     A character string identifying the model (same as the input argument).
   }
   \item{Attributes:}{
-    \item \code{"info"} Information on the iteration.
-    \item \code{"warn"} An appropriate warning if problems are
-    encountered in the computations. 
+    \describe{
+    \item{\code{"info"}}{Information on the iteration.}
+    \item{\code{"warn"}}{An appropriate warning if problems are
+    encountered in the computations.}
   }
+ }
 }
 \section{References}{
   C. Fraley and A. E. Raftery (2002a).

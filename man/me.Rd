@@ -88,7 +88,7 @@ me(modelName, data, z, \dots)
   }
 }
 \value{
-  A list including the following components: 
+  A list including the following components:
   \item{mu}{
     A matrix whose kth column is the mean of the \emph{k}th component of
     the mixture model. 
@@ -117,7 +117,7 @@ me(modelName, data, z, \dots)
     A character string identifying the model (same as the input argument).
   }
   \item{Attributes:}{
-    \itemize{
+    \describe{
       \item{"info"}{
 	Information on the iteration.
       }

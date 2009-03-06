@@ -93,7 +93,7 @@ meVVV(data, z, eps, tol, itmax, equalPro, warnSingular,
   }
 }
 \value{
-  A list including the following components: 
+  A list including the following components:
   \item{mu}{
     A matrix whose kth column is the mean of the \emph{k}th
     component of the mixture model.
@@ -122,11 +122,12 @@ meVVV(data, z, eps, tol, itmax, equalPro, warnSingular,
   }
   \item{Attributes:}{ 
     The return value also has the following attributes:
-    \item \code{"info"}: Information on the iteration.
-    \item \code{"warn"}: An appropriate warning if problems are
-    encountered in the computations. 
-    
+    \describe{
+    \item{\code{"info"}}{Information on the iteration.}
+    \item{\code{"warn"}}{An appropriate warning if problems are
+    encountered in the computations.}
   }
+ }
 }
 \section{References}{
   C. Fraley and A. E. Raftery (2002a).

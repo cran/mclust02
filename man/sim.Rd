@@ -62,13 +62,13 @@ sim(modelName, mu, \dots, seed = 0)
 	for the output for the \code{em}, \code{me}, or
 	\code{mstep} methods for the specified mixture model.
       }
-    }
     \item{pro}{
       Component mixing proportions. If missing, equal proportions are
       assumed. 
     }
     \item{n}{
       An integer specifying the number of data points to be simulated.
+    }
     }
   }
   \item{seed}{

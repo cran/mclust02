@@ -6,7 +6,7 @@
   that is picked and the number of clusters.
 }
 \usage{
-summary.Mclust(object, \dots)
+\method{summary}{Mclust}(object, \dots)
 }
 \arguments{
   \item{object}{The result of a call to

@@ -8,7 +8,7 @@
   posterior probabilities. 
 }
 \usage{
-summary.mclustDAtest(object, pro, \dots)
+\method{summary}{mclustDAtest}(object, pro, \dots)
 }
 \arguments{
   \item{object}{

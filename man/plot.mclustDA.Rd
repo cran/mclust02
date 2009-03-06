@@ -8,7 +8,7 @@
   mclustDA test data classification, and/or training errors.
 }
 \usage{
-plot.mclustDA(x, trainingData, labels, testData, dimens=c(1,2),
+\method{plot}{mclustDA}(x, trainingData, labels, testData, dimens=c(1,2),
               scale = FALSE, identify=FALSE, \dots)
 }
 \arguments{

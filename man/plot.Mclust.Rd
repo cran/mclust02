@@ -8,7 +8,7 @@
   (for one- and two-dimensional data) density.
 }
 \usage{
-plot.Mclust(x, data, dimens = c(1, 2), scale = FALSE, \dots)
+\method{plot}{Mclust}(x, data, dimens = c(1, 2), scale = FALSE, \dots)
 }
 \arguments{
   \item{x}{

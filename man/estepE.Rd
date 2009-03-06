@@ -96,15 +96,11 @@ estepVVV(data, mu, sigma, pro, eps, warnSingular, Vinv, \dots)
     \code{cholSigma} for model "EEE".  \code{Sigma} is an \emph{d} by
     \emph{d} matrix giving the common covariance for all components of
     the mixture model.
-
     Also used to catch unused arguments from a \code{do.call} call.
-  }
-
   }
 }
 \value{
-  A list including the following components: 
-  
+  A list including the following components:
   \item{z}{
     A matrix whose \code{[i,k]}th entry is the
     conditional probability of the \emph{i}th observation belonging to
@@ -116,10 +112,10 @@ estepVVV(data, mu, sigma, pro, eps, warnSingular, Vinv, \dots)
   \item{modelName}{
     Character string identifying the model.
   }
-  \item{Attribute}{
-    \itemize{
-      \item \code{"warn"}: An appropriate warning if problems are
-      encountered in the computations.
+  \item{Attribute:}{
+    \describe{
+      \item{\code{"warn"}}{An appropriate warning if problems are
+      encountered in the computations.}
     }
   }
 }

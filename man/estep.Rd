@@ -99,7 +99,7 @@ estep(modelName, data, mu, \dots)
   }
 }
 \value{
-  A list including the following components: 
+  A list including the following components:
   \item{z}{
     A matrix whose \code{[i,k]}th entry is the conditional probability
     of the \emph{i}th observation belonging to the \emph{k}th component
@@ -112,10 +112,10 @@ estep(modelName, data, mu, \dots)
     A character string identifying the model (same as the input argument).
   }
   \item{Attribute}{
-    \itemize{
-      \item \code{"warn"}: An appropriate warning if problems are
-      encountered in the computations.
-    }
+    \describe{
+      \item{\code{"warn"}}{An appropriate warning if problems are
+      encountered in the computations.}
+  }
   }
 }
 \details{
